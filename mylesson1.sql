@@ -1,0 +1,16 @@
+CREATE table supplier (
+  SNO TEXT PRIMARY KEY,
+  SNAME TEXT,
+  STATUS INTEGER,
+  CITY TEXT
+);
+
+INSERT INTO supplier (SNO, SNAME, STATUS, CITY)
+VALUES
+  ('S1', 'SMITH', 20, 'LONDON'),
+  ('S2', 'ISHAAN', 20, 'PARIS'),
+  ('S3', 'JOHN', 20, 'DUBAI'),
+  ('S4', 'BLAZE', 20, 'ATHENS'),
+  ('S5', 'ADAM', 20, 'LONDON');
+
+SELECT SNAME, CITY FROM supplier;
